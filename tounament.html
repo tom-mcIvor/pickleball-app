@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picball Tournaments</title>
+  <!-- Add a link to your CSS stylesheet here -->
+  <link rel="stylesheet" href="style-tournament.css">
+</head>
+<body>
+  <h1>Battle of the paddles</h1>
+  
+  <!-- Entry Form -->
+  <form action="submit_entry.php" method="POST">
+    <!-- Singles A Grade -->
+    <div class="form-group">
+      <h2>Singles A Grade</h2>
+      <label for="singlesAPlayerName">Player Name:</label>
+      <input type="text" id="singlesAPlayerName" name="singlesAPlayerName" required>
+    </div>
+
+    <!-- Singles B Grade -->
+    <div class="form-group">
+      <h2>Singles B Grade</h2>
+      <label for="singlesBPlayerName">Player Name:</label>
+      <input type="text" id="singlesBPlayerName" name="singlesBPlayerName" required>
+    </div>
+
+    <!-- Doubles A Grade -->
+    <div class="form-group">
+      <h2>Doubles A Grade</h2>
+      <label for="doublesAPlayer1">Player 1 Name:</label>
+      <input type="text" id="doublesAPlayer1" name="doublesAPlayer1" required>
+      <label for="doublesAPlayer2">Player 2 Name:</label>
+      <input type="text" id="doublesAPlayer2" name="doublesAPlayer2" required>
+    </div>
+
+    <!-- Doubles B Grade -->
+    <div class="form-group">
+      <h2>Doubles B Grade</h2>
+      <label for="doublesBPlayer1">Player 1 Name:</label>
+      <input type="text" id="doublesBPlayer1" name="doublesBPlayer1" required>
+      <label for="doublesBPlayer2">Player 2 Name:</label>
+      <input type="text" id="doublesBPlayer2" name="doublesBPlayer2" required>
+    </div>
+
+    <!-- Doubles Mixed A/B Grade -->
+    <div class="form-group">
+      <h2>Doubles Mixed A/B Grade</h2>
+      <label for="mixedDoublesAPlayer">Player Name (A Grade):</label>
+      <input type="text" id="mixedDoublesAPlayer" name="mixedDoublesAPlayer" required>
+      <label for="mixedDoublesBPlayer">Player Name (B Grade):</label>
+      <input type="text" id="mixedDoublesBPlayer" name="mixedDoublesBPlayer" required>
+    </div>
+    
+    <button type="submit">Submit Entries</button>
+  </form>
+</body>
+</html>
